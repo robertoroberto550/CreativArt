@@ -1,11 +1,11 @@
 CREATIVART - RENDER + POSTGRESQL
 
-1. Pune toate fisierele proiectului intr-un repository GitHub.
-2. In Render: New > Blueprint si selecteaza repository-ul.
-3. Render va citi render.yaml si va crea serviciul web + baza PostgreSQL.
-4. Nu introduce "RO" sau alta valoare la Build Command. Proiectul foloseste Dockerfile.
-5. Dupa ce baza este creata, deschide baza PostgreSQL in Render si ruleaza continutul database.sql folosind instrumentul SQL disponibil sau un client PostgreSQL.
-6. Deschide /install_admin.php pentru a crea primul administrator, apoi elimina/blocheaza acest fisier dupa instalare.
+1. Pune toate fisierele proiectului in repository-ul GitHub CreativArt.
+2. Render foloseste render.yaml si DATABASE_URL pentru baza PostgreSQL.
+3. Schema PostgreSQL este initializata automat din database.sql la prima accesare a site-ului.
+4. Dupa deploy, deschide site-ul principal o data; tabelele si produsele demo vor fi create automat daca lipsesc.
+5. Apoi deschide /install_admin.php si creeaza primul administrator.
+6. Dupa crearea administratorului, elimina install_admin.php din repository (recomandat).
 7. Site: /   Admin: /admin/   Cont client: /account.php
 
-Secretul DATABASE_URL este injectat automat de Render prin render.yaml si nu trebuie pus in cod.
+IMPORTANT: Nu publica DATABASE_URL si nu pune parole in repository.
