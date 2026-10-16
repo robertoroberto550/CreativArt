@@ -3,7 +3,7 @@
 <title>CreativArt — Articole personalizate</title><link rel="stylesheet" href="assets/style.css"></head>
 <body>
 <div class="top">Livrare în toată România • Cadouri personalizate • Comenzi online</div>
-<header><a class="logo" href="./">Creativ<span>Art</span></a><nav><a href="#produse">Produse</a><a href="#categorii">Categorii</a><a href="#despre">Despre noi</a><a href="account.php">Contul meu</a><a href="admin/">Admin</a></nav></header>
+<header><a class="logo" href="./">Creativ<span>Art</span></a><nav><a href="#produse">Produse</a><a href="#modele-magneti">Magneți botez</a><a href="#categorii">Categorii</a><a href="#despre">Despre noi</a><a href="account.php">Contul meu</a><a href="admin/">Admin</a></nav></header>
 <section class="hero"><div><span class="eyebrow">CADOURI CU SUFLET</span><h1>Transformă amintirile în <em>cadouri speciale</em></h1><p>Căni, perne, tablouri și alte articole personalizate cu fotografia și mesajul tău.</p><a class="btn" href="#produse">Vezi produsele</a></div></section>
 <section class="benefits"><div>✦<b>Personalizare</b><small>Fotografie + mesaj</small></div><div>♡<b>Cadouri speciale</b><small>Pentru orice ocazie</small></div><div>▣<b>Livrare națională</b><small>Oriunde în România</small></div><div>✓<b>Comandă simplă</b><small>Direct de pe site</small></div></section>
 <main>
@@ -11,6 +11,13 @@
 <section id="produse"><div class="sectionTitle"><span>CREATIVART</span><h2>Produse personalizate</h2></div>
 <div class="filters"><input id="search" placeholder="Caută un produs..."><select id="category"><option value="">Toate categoriile</option></select><select id="sort"><option value="new">Cele mai noi</option><option value="priceAsc">Preț crescător</option><option value="priceDesc">Preț descrescător</option></select></div>
 <div id="products" class="products"><div class="loading">Se încarcă produsele…</div></div></section>
+<section id="modele-magneti" class="gallerySec"><div class="sectionTitle"><span>MODELE NOI</span><h2>Magneți personalizați pentru botez</h2><p>Fiecare colaj este păstrat integral într-o singură fotografie.</p></div><div class="magnetGallery">
+<figure><img src="assets/images/magneti-botez-01.webp" alt="Colaj complet cu patru modele personalizate cu numele Fabian și Sofia" loading="lazy"><figcaption>Patru modele într-o singură fotografie</figcaption></figure>
+<figure><img src="assets/images/magneti-botez-02.webp" alt="Colaj complet cu patru modele de mărturii personalizate cu numele Fabian și Sofia" loading="lazy"><figcaption>Patru modele într-o singură fotografie</figcaption></figure>
+<figure><img src="assets/images/magneti-botez-03.webp" alt="Colaj complet cu patru modele personalizate cu numele Noah, Luca, Daria și Emma" loading="lazy"><figcaption>Patru modele într-o singură fotografie</figcaption></figure>
+<figure><img src="assets/images/magneti-botez-04.webp" alt="Două modele de magneți personalizați cu numele Mara și David" loading="lazy"><figcaption>Modele pentru Mara și David</figcaption></figure>
+<figure><img src="assets/images/magneti-botez-05.webp" alt="Două modele personalizate cu numele Ana și Matei" loading="lazy"><figcaption>Modele pentru Ana și Matei</figcaption></figure>
+</div></section>
 <section id="despre" class="about"><div><span>DESPRE CREATIVART</span><h2>Un cadou creat special pentru cineva drag</h2><p>Alege produsul, adaugă mesajul și fotografia ta, iar noi pregătim personalizarea. Previzualizarea te ajută să vezi ideea înainte de comandă.</p></div><div class="quote">„Momentele frumoase merită păstrate.”</div></section>
 <section class="checkout"><h2>Finalizează comanda</h2><p>Completează datele după ce ai adăugat produsele în coș.</p><div class="formgrid"><input id="name" placeholder="Nume și prenume"><input id="email" type="email" placeholder="Email (opțional)"><input id="phone" placeholder="Telefon"><input id="address" placeholder="Adresă de livrare"></div><textarea id="details" placeholder="Detalii suplimentare"></textarea><button class="btn" onclick="sendOrder()">Trimite comanda</button><p id="msg"></p></section>
 </main>
